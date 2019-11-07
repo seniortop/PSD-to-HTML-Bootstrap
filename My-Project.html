@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Project</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="css/common.css">
+  	<link rel="stylesheet" href="css/project.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="content">
+		<div class="main-page-bg">
+			<img src="images/project/bg-asset1.png" class="bg-asset1">
+			<img src="images/project/bg-asset2.png" class="bg-asset2">
+		</div>
+		<div class="top-bar">
+			<nav class="navbar navbar-expand-sm">
+				<a class="navbar-brand" href="#">
+					<img src="images/dashboard/Logo-320px.png">
+				</a>
+			    <ul class="navbar-nav right">
+			        <li class="nav-item">
+			            <a class="nav-link top-nav" href="#">
+			            	<i class="fas fa-bell fa-nav"></i>
+			            </a>
+			        </li>
+				    <li class="nav-item">
+				        <div class="nav-link top-nav dropdown">
+				        	<div class="dropdown-toggle" data-toggle="dropdown">
+				        		<i class="fas fa-user fa-nav"></i>
+				        		<span class="dropdown-name">Name</span>
+				        	</div>
+				        	
+						    <div class="dropdown-menu dropdown-right">
+						        <a class="dropdown-item" href="#">Link 1</a>
+						    	<a class="dropdown-item" href="#">Link 2</a>
+						    	<a class="dropdown-item" href="#">Link 3</a>
+						    </div>
+				        </div>
+				    </li>
+			  	</ul>
+			</nav>
+		</div>
+		<div class="page-content">
+			<div class="col-md-2 responsive-side-bar side-bar" id="side-bar">
+				<span class="close-btn" onclick="closeSidebar()">&times;</span>
+				<div class="add-order-btn">
+					<button type="button" class="btn btn-primary btn-block add-btn">Add Order</button>
+				</div>
+				<div class="side-bar-items">
+					<div>
+						<div class="side-bar-item" style="display: block">
+							<div class="sm-text">*Icon pake Material.io</div>
+							<div class=" side-bar-dashboard" style="display: flex;">
+								<div class="icon-home">
+									<img class="icon-home1" src="images/dashboard/icon-home1.png">
+									<img class="icon-home2" src="images/dashboard/icon-home2.png">
+								</div>
+								<span class="side-bar-item-name" style="color: #0097dc">Dashboard</span>
+							</div>
+						</div>
+						<div class="side-bar-item">
+							<img class="side-bar-icon" src="images/dashboard/icon-material-description.png">
+							<span class="side-bar-item-name">Invoice</span>
+						</div>
+						<div class="side-bar-item">
+							<i class="fa fa-list"></i>
+							<span class="side-bar-item-name">My Project</span>
+						</div>
+						<div class="side-bar-item">
+							<img class="side-bar-icon" src="images/dashboard/icon-material-account-balance-wallet.png">
+							<span class="side-bar-item-name">My Balance</span>
+						</div>
+						<div class="side-bar-item">
+							<img class="side-bar-icon" src="images/dashboard/icon-material-supervisor-account.png">
+							<span class="side-bar-item-name">Affiliates</span>
+						</div>
+					</div>
+				</div>
+				<div class="side-bar-bottom">
+					<div>
+						<div class="side-bar-item">
+							<div class="icon-help"><span class="icon-help-inside">?</span></div>
+							<span class="side-bar-item-name">Help Center</span>
+						</div>
+						<div class="side-bar-item">
+							<div>
+								<img class="icon-setting1" class="side-bar-icon" src="images/dashboard/settings.png">
+								<img class="icon-setting2" class="side-bar-icon" src="images/dashboard/settings-inside.png">
+							</div>
+							<span class="side-bar-item-name">Settings</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 side-bar">
+				<div class="add-order-btn">
+					<button type="button" class="btn btn-primary btn-block add-btn">Add Order</button>
+				</div>
+				<div class="side-bar-items">
+					<div class="side-bar-item" style="display: block">
+						<div class="sm-text">*Icon pake Material.io</div>
+						<div class=" side-bar-dashboard" style="display: flex;">
+							<div class="icon-home">
+								<img class="icon-home1" src="images/dashboard/icon-home1.png">
+								<img class="icon-home2" src="images/dashboard/icon-home2.png">
+							</div>
+							<span class="side-bar-item-name" style="color: #0097dc">Dashboard</span>
+						</div>
+					</div>
+					<div class="side-bar-item">
+						<img class="side-bar-icon" src="images/dashboard/icon-material-description.png">
+						<span class="side-bar-item-name">Invoice</span>
+					</div>
+					<div class="side-bar-item">
+						<i class="fa fa-list"></i>
+						<span class="side-bar-item-name">My Project</span>
+					</div>
+					<div class="side-bar-item">
+						<img class="side-bar-icon" src="images/dashboard/icon-material-account-balance-wallet.png">
+						<span class="side-bar-item-name">My Balance</span>
+					</div>
+					<div class="side-bar-item">
+						<img class="side-bar-icon" src="images/dashboard/icon-material-supervisor-account.png">
+						<span class="side-bar-item-name">Affiliates</span>
+					</div>
+				</div>
+				<div class="side-bar-bottom">
+					<div class="side-bar-item">
+						<div class="icon-help"><span class="icon-help-inside">?</span></div>
+						<span class="side-bar-item-name">Help Center</span>
+					</div>
+					<div class="side-bar-item">
+						<div>
+							<img class="icon-setting1" class="side-bar-icon" src="images/dashboard/settings.png">
+							<img class="icon-setting2" class="side-bar-icon" src="images/dashboard/settings-inside.png">
+						</div>
+						<span class="side-bar-item-name">Settings</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-10 main-page">
+				<i class="fas fa-bars" onclick="showSidebar()"></i>
+				<div class="page-container">
+					<div class="select-form">
+						<div class="select-form-content">
+							<div class="form-group">
+								<select class="form-control">
+									<option>Tanggal order</option>
+									<option>Bisa input tanggal</option>
+									<option>Bulan</option>
+									<option>Tahun (auto pick today)</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select class="form-control">
+									<option>Filter Status</option>
+									<option>On Progress</option>
+									<option>Complete</option>
+									<option>Canceled</option>
+								</select>
+							</div>
+							<div>
+								<button class="btn reset-btn">Reset Filter</button>
+							</div>
+						</div>
+						<div class="warning-tab">
+							<button class="btn warning">
+								<img src="images/project/warning.png" class="icon-warning" style="margin-top: -5px;">
+							</button>
+						</div>
+					</div>
+					<div class="project-card-list">
+						<div class="project-card">
+							<div class="project-card-title">
+								<div>29 Sep 2018 [16:00 WIB]</div>
+								<div>Order Number : #ODR124466754656</div>
+							</div>
+							<div class="project-card-contents">
+								<div class="project-card-content">
+									<div class="facebook-icon">
+										<div class="icon-facebook">
+											<img src="images/dashboard/facebook.png" class="facebook">
+										</div>
+									</div>
+									<div class="project-card-content-description">
+										<div class="project-card-content-description1">
+											<div class="project-card-content-description1-top">
+												<div class="project-card-content-description1-top-left">
+													Instant
+												</div>
+												<div class="project-card-content-description1-top-right">
+													3 Hari
+												</div>
+											</div>
+											<div class="project-card-content-description1-bottom">
+												1000 Facebook Likes Real Mix/Campuran
+											</div>
+										</div>
+										<div class="project-card-content-description2">
+											<div class="project-card-content-description2-top">
+												Rp. 150.000,-
+											</div>
+											<div class="project-card-content-description2-bottom">
+												See Invoice
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="project-card-bottom">
+								<div class="status-content">
+									<div class="project-card-bottom-status-icon bg-green">
+										<i class="fas fa-clock"></i>
+									</div>
+									<div class="project-card-bottom-status">
+										On Progress
+									</div>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="60"
+										  aria-valuemin="0" aria-valuemax="100" style="width:60%">
+										</div>
+									</div>
+									<div class="percent">60/100 %</div>
+								</div>
+								<div class="project-card-bottom-btn">
+									<button class="btn bottom-btn">Go to Project</button>
+								</div>
+							</div>
+						</div>
+						<div class="project-card">
+							<div class="project-card-title">
+								<div>29 Sep 2018 [16:00 WIB]</div>
+								<div>Order Number : #ODR124466754656</div>
+							</div>
+							<div class="project-card-contents">
+								<div class="project-card-content">
+									<div class="icon-facebook">
+										<img src="images/dashboard/facebook.png" class="facebook">
+									</div>
+									<div class="project-card-content-description">
+										<div class="project-card-content-description1">
+											<div class="project-card-content-description1-top">
+												<div class="project-card-content-description1-top-left">
+													Instant
+												</div>
+												<div class="project-card-content-description1-top-right">
+													3 Hari
+												</div>
+											</div>
+											<div class="project-card-content-description1-bottom">
+												1000 Facebook Likes Real Mix/Campuran
+											</div>
+										</div>
+										<div class="project-card-content-description2">
+											<div class="project-card-content-description2-top">
+												Rp. 150.000,-
+											</div>
+											<div class="project-card-content-description2-bottom">
+												See Invoice
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="project-card-bottom">
+								<div class="status-content">
+									<div class="project-card-bottom-status-icon bg-red">
+										<div class="icon-close" style="font-size: 20px;margin-top: -9px;margin-left: -0.8px;">&times;</div>
+									</div>
+									<div class="project-card-bottom-status">
+										Canceled
+									</div>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="60"
+										  aria-valuemin="0" aria-valuemax="100" style="width:60%">
+										</div>
+									</div>
+									<div class="percent">60/100 %</div>
+								</div>
+								<div class="project-card-bottom-btn">
+									<button class="btn bottom-btn">Go to Project</button>
+								</div>
+							</div>
+						</div>
+						<div class="project-card">
+							<div class="project-card-title">
+								<div>29 Sep 2018 [16:00 WIB]</div>
+								<div>Order Number : #ODR124466754656</div>
+							</div>
+							<div class="project-card-contents">
+								<div class="project-card-content">
+									<div class="icon-facebook">
+										<img src="images/dashboard/facebook.png" class="facebook">
+									</div>
+									<div class="project-card-content-description">
+										<div class="project-card-content-description1">
+											<div class="project-card-content-description1-top">
+												<div class="project-card-content-description1-top-left">
+													Instant
+												</div>
+												<div class="project-card-content-description1-top-right">
+													3 Hari
+												</div>
+											</div>
+											<div class="project-card-content-description1-bottom">
+												1000 Facebook Likes Real Mix/Campuran
+											</div>
+										</div>
+										<div class="project-card-content-description2">
+											<div class="project-card-content-description2-top">
+												Rp. 150.000,-
+											</div>
+											<div class="project-card-content-description2-bottom">
+												See Invoice
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="project-card-bottom">
+								<div class="status-content">
+									<div class="project-card-bottom-status-icon bg-blue">
+										<i class="fas fa-check"></i>
+									</div>
+									<div class="project-card-bottom-status">
+										Completed
+									</div>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" aria-valuenow="100"
+										  aria-valuemin="0" aria-valuemax="100" style="width:100%">
+										</div>
+									</div>
+									<div class="percent">100/100 %</div>
+								</div>
+								<div class="project-card-bottom-btn">
+									<button class="btn bottom-btn">Go to Project</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	function showSidebar() {
+		document.getElementById("side-bar").style.left = "0" + "%";
+	}
+	function closeSidebar() {
+		document.getElementById("side-bar").style.left = "-101" + "%";
+	}
+</script>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Help Center</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="css/common.css">
+  	<link rel="stylesheet" href="css/help.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="content">
+		<div class="main-page-bg">
+			<img src="images/help/bg-asset1.png" class="bg-asset1">
+			<img src="images/help/bg-asset2.png" class="bg-asset2">
+		</div>
+		<div class="top-bar">
+			<nav class="navbar navbar-expand-sm">
+				<a class="navbar-brand" href="#">
+					<img src="images/dashboard/Logo-320px.png" class="logo">
+				</a>
+			    <ul class="navbar-nav right">
+			        <li class="nav-item">
+			            <a class="nav-link top-nav" href="#">
+			            	<i class="fas fa-bell fa-nav"></i>
+			            </a>
+			        </li>
+				    <li class="nav-item">
+				        <div class="nav-link top-nav dropdown">
+				        	<div class="dropdown-toggle" data-toggle="dropdown">
+				        		<i class="fas fa-user fa-nav"></i>
+				        		<span class="dropdown-name">Name</span>
+				        	</div>
+				        	
+						    <div class="dropdown-menu dropdown-right">
+						        <a class="dropdown-item" href="#">Link 1</a>
+						    	<a class="dropdown-item" href="#">Link 2</a>
+						    	<a class="dropdown-item" href="#">Link 3</a>
+						    </div>
+				        </div>
+				    </li>
+			  	</ul>
+			</nav>
+		</div>
+		<div class="page-content">
+			<div class="col-md-2 responsive-side-bar side-bar" id="side-bar">
+				<span class="close-btn" onclick="closeSidebar()">&times;</span>
+				<div class="add-order-btn">
+					<button type="button" class="btn btn-primary btn-block add-btn">Add Order</button>
+				</div>
+				<div class="side-bar-items">
+					<div>
+						<div class="side-bar-item" style="display: block">
+							<div class="sm-text">*Icon pake Material.io</div>
+							<div class=" side-bar-dashboard" style="display: flex;">
+								<div class="icon-home">
+									<img class="icon-home1" src="images/dashboard/icon-home1.png">
+									<img class="icon-home2" src="images/dashboard/icon-home2.png">
+								</div>
+								<span class="side-bar-item-name" style="color: #0097dc">Dashboard</span>
+							</div>
+						</div>
+						<div class="side-bar-item">
+							<img class="side-bar-icon" src="images/dashboard/icon-material-description.png">
+							<span class="side-bar-item-name">Invoice</span>
+						</div>
+						<div class="side-bar-item">
+							<i class="fa fa-list"></i>
+							<span class="side-bar-item-name">My Project</span>
+						</div>
+						<div class="side-bar-item">
+							<img class="side-bar-icon" src="images/dashboard/icon-material-account-balance-wallet.png">
+							<span class="side-bar-item-name">My Balance</span>
+						</div>
+						<div class="side-bar-item">
+							<img class="side-bar-icon" src="images/dashboard/icon-material-supervisor-account.png">
+							<span class="side-bar-item-name">Affiliates</span>
+						</div>
+					</div>
+				</div>
+				<div class="side-bar-bottom">
+					<div>
+						<div class="side-bar-item">
+							<div class="icon-help"><span class="icon-help-inside">?</span></div>
+							<span class="side-bar-item-name">Help Center</span>
+						</div>
+						<div class="side-bar-item">
+							<div>
+								<img class="icon-setting1" class="side-bar-icon" src="images/dashboard/settings.png">
+								<img class="icon-setting2" class="side-bar-icon" src="images/dashboard/settings-inside.png">
+							</div>
+							<span class="side-bar-item-name">Settings</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 side-bar">
+				<div class="add-order-btn">
+					<button type="button" class="btn btn-primary btn-block add-btn">Add Order</button>
+				</div>
+				<div class="side-bar-items">
+					<div class="side-bar-item" style="display: block">
+						<div class="sm-text">*Icon pake Material.io</div>
+						<div class=" side-bar-dashboard" style="display: flex;">
+							<div class="icon-home">
+								<img class="icon-home1" src="images/dashboard/icon-home1.png">
+								<img class="icon-home2" src="images/dashboard/icon-home2.png">
+							</div>
+							<span class="side-bar-item-name" style="color: #0097dc">Dashboard</span>
+						</div>
+					</div>
+					<div class="side-bar-item">
+						<img class="side-bar-icon" src="images/dashboard/icon-material-description.png">
+						<span class="side-bar-item-name">Invoice</span>
+					</div>
+					<div class="side-bar-item">
+						<i class="fa fa-list"></i>
+						<span class="side-bar-item-name">My Project</span>
+					</div>
+					<div class="side-bar-item">
+						<img class="side-bar-icon" src="images/dashboard/icon-material-account-balance-wallet.png">
+						<span class="side-bar-item-name">My Balance</span>
+					</div>
+					<div class="side-bar-item">
+						<img class="side-bar-icon" src="images/dashboard/icon-material-supervisor-account.png">
+						<span class="side-bar-item-name">Affiliates</span>
+					</div>
+				</div>
+				<div class="side-bar-bottom">
+					<div class="side-bar-item">
+						<div class="icon-help"><span class="icon-help-inside">?</span></div>
+						<span class="side-bar-item-name">Help Center</span>
+					</div>
+					<div class="side-bar-item">
+						<div>
+							<img class="icon-setting1" class="side-bar-icon" src="images/dashboard/settings.png">
+							<img class="icon-setting2" class="side-bar-icon" src="images/dashboard/settings-inside.png">
+						</div>
+						<span class="side-bar-item-name">Settings</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-10 main-page">
+				<i class="fas fa-bars" onclick="showSidebar()"></i>
+				<div class="main-page-header">
+					<div class="question-row">
+						<img src="images/help/question-mark.png" class="bird">
+						<div class="question">
+							<div>
+								<div>How Can</div>
+								<div style="margin-left: 17px">we help?</div>
+							</div>
+						</div>
+					</div>
+					<div class="search-row col-md-6">
+						<div class="form-group">
+							<div class="search">Search</div>
+							<i class="fas fa-search search-icon"></i>
+							<input type="text" class="form-control">
+						</div>
+					</div>
+				</div>
+				<div class="main-page-search-results">
+					<div class="main-page-search-result">
+						<div class="main-page-search-result-left" style="display: flex;align-items: center">
+							<img src="images/help/image1.png" class="image">
+							<div class="main-page-search-description">
+								<div class="main-page-search-description1">Kirim Ticket</div>
+								<div class="main-page-search-description2">Minta bantuan tim </br>melalui ticket support.</div>
+							</div>
+						</div>
+						<div class="main-page-search-result-action">
+							<button class="btn search-action-btn">Open ticket</button>
+						</div>
+					</div>
+					<div class="main-page-search-result">
+						<div class="main-page-search-result-left" style="display: flex;align-items: center">
+							<img src="images/help/image2.png" class="image">
+							<div class="main-page-search-description">
+								<div class="main-page-search-description1">Knowledge Base</div>
+								<div class="main-page-search-description2">Cari solusi terkait di direktori </br>artikel yang sudah dibuat.</div>
+							</div>
+						</div>
+						<div class="main-page-search-result-action">
+							<button class="btn search-action-btn">Find Solution</button>
+						</div>
+					</div>
+				</div>
+				<div class="ticket-history-list">
+					<div class="ticket-history-header">
+						<div class="ticket-history-header-title">Ticket History</div>
+						<div class="ticket-history-header-btn">
+							<button class="btn view-btn">View All Ticket</button>
+						</div>
+					</div>
+					<div class="ticket-histories">
+						<div class="ticket-history">
+							<div class="ticket-history-card-header">
+								<div class="ticket-history-header1">29 Sep 2018</div>
+								<div class="ticket-history-header2">No : #124466754656</div>
+							</div>
+							<div class="ticket-history-content">
+								<div class="ticket-history-content-left">
+									<div class="ticket-history-content-left1">Department</div>
+									<div class="ticket-history-content-left2">Subject</div>
+								</div>
+								<div class="ticket-history-content-right">
+									<button class="btn ticket-btn">Admin-Reply</button>
+								</div>
+							</div>
+						</div>
+						<div class="ticket-history">
+							<div class="ticket-history-card-header">
+								<div class="ticket-history-header1">29 Sep 2018</div>
+								<div class="ticket-history-header2">No : #124466754656</div>
+							</div>
+							<div class="ticket-history-content">
+								<div class="ticket-history-content-left">
+									<div class="ticket-history-content-left1">Department</div>
+									<div class="ticket-history-content-left2">Subject</div>
+								</div>
+								<div class="ticket-history-content-right">
+									<button class="btn ticket-btn">Cust-Reply</button>
+								</div>
+							</div>
+						</div>
+						<div class="ticket-history">
+							<div class="ticket-history-card-header">
+								<div class="ticket-history-header1">29 Sep 2018</div>
+								<div class="ticket-history-header2">No : #124466754656</div>
+							</div>
+							<div class="ticket-history-content">
+								<div class="ticket-history-content-left">
+									<div class="ticket-history-content-left1">Department</div>
+									<div class="ticket-history-content-left2">Subject</div>
+								</div>
+								<div class="ticket-history-content-right">
+									<button class="btn ticket-btn" style="background: #92cde7 !important">open</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contact-form">
+					<div class="contact-form-question">Didn’t find an answer to your question?</div>
+					<div class="contact-form-row">
+						<div class="contact-email">
+							<img src="images/help/mail.png">
+							<div class="contact-description">
+								<div class="contact-description1">Email :</div>
+								<div class="contact-description2">hello@gssco.id</div>
+							</div>
+						</div>
+						<div class="contact-phone">
+							<img src="images/help/phone.png">
+							<div class="contact-description">
+								<div class="contact-description1">Phone :</div>
+								<div class="contact-description2">022-xxxxxx</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	function showSidebar() {
+		document.getElementById("side-bar").style.left = "0" + "%";
+	}
+	function closeSidebar() {
+		document.getElementById("side-bar").style.left = "-101" + "%";
+	}
+</script>
+</html>
